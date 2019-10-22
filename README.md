@@ -21,5 +21,5 @@ docker build -t lynn9388/github-pages-docker .
 Execute the following command in the root directory of your site
 
 ```sh
-docker run --rm -p 4000:4000 -v ${PWD}:/site lynn9388/github-pages-docker
+docker run --rm -p 4000:4000 -v $(pwd):/site lynn9388/github-pages-docker
 ```

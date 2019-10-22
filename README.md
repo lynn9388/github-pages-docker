@@ -1,4 +1,4 @@
-# github-pages
+# github-pages-docker
 
 Docker image for running GitHub Pages. More specifically, this image is created to run [light-blog](https://github.com/lynn9388/light-blog) or any site that uses it as a remote theme.
 
@@ -7,13 +7,13 @@ Docker image for running GitHub Pages. More specifically, this image is created 
 You can use the following command to build a new release with tag. (Replace `USERNAME` and `VERSION` as appropriate).
 
 ```sh
-docker build -t USERNAME/github-pages:VERSION .
+docker build -t USERNAME/github-pages-docker:VERSION .
 ```
 
 like
 
 ```sh
-docker build -t lynn9388/github-pages .
+docker build -t lynn9388/github-pages-docker .
 ```
 
 ## Use the image
@@ -21,5 +21,5 @@ docker build -t lynn9388/github-pages .
 Execute the following command in the root directory of your site
 
 ```sh
-docker run --rm -p 4000:4000 -v ${PWD}:/site lynn9388/github-pages
+docker run --rm -p 4000:4000 -v ${PWD}:/site lynn9388/github-pages-docker
 ```

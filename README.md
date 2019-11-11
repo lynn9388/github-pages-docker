@@ -23,3 +23,5 @@ Execute the following command in the root directory of your site
 ```sh
 docker run --rm -p 4000:4000 -v $(pwd):/site lynn9388/github-pages-docker
 ```
+
+You may need to delete the `Gemfile.lock` file of your site.
